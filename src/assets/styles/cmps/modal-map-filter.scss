@@ -1,0 +1,36 @@
+.modal-map-filter {
+  background:white;
+  width: 700px;
+  height: 500px;
+ border:1px solid gray;
+ border-radius:1em;
+ position:relative;
+ z-index:20;
+ h1.title-map-filter{
+  margin:5px 20px;
+  font-size:24px;
+ }
+}
+.gallery-img-filter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  article {
+    margin: 10px 30px;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius:1em;
+      margin-bottom:10px;
+      
+    }
+    
+    h4{
+      color:black;
+      font-size:18px;
+    }
+  }
+}

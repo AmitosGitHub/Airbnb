@@ -1,0 +1,20 @@
+
+.date-picker{
+    display: flex;
+    flex-direction:column;
+    
+}
+
+section.details-calendar{
+    background:white;
+    // z-index:10;
+    
+    .rdp-multiple_months{
+        display: flex;
+
+        .rdp-table{
+            width:400px;
+        }
+    }
+    
+}

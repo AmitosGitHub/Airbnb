@@ -1,0 +1,45 @@
+// Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+@import 'setup/typography';
+
+// Lib
+@import '~bootstrap/scss/bootstrap';
+
+// Basic
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/base';
+@import 'basics/links';
+@import 'basics/forms';
+
+// Views
+@import 'views/user-details';
+@import 'views/about-us';
+@import 'views/home-page';
+@import 'views/stay-app';
+@import 'views/review-app';
+@import 'views/stay-details.css';
+@import 'views/stay-details';
+@import 'views/dashboard';
+
+// Components
+// @import 'cmps/react_dates_overrides.css';
+@import 'cmps/app-header';
+@import 'cmps/app-footer';
+@import 'cmps/user-msg';
+@import 'cmps/stay-preview';
+@import 'cmps/stay-list';
+@import 'cmps/stay-filter';
+@import 'cmps/display-main-search';
+@import 'cmps/simpel-search';
+@import 'cmps/app-user';
+@import 'cmps/modal-filter';
+@import 'cmps/modal-who';
+@import 'cmps/modal-map-filter';
+@import 'cmps/modal-calendar-filter';
+@import 'cmps/details-calendar';
+@import 'cmps/like-btn-preview';
+@import 'cmps/reserve-modal.scss';
+@import 'cmps/app-filter-carousel.scss';

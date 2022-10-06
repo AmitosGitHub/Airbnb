@@ -1,0 +1,47 @@
+.like-button-wrapper {
+    &::before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+    //   bottom: 0;
+    //   will-change: background-color;
+      transition: background-color 0.3s, transform 0.3s;
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.122);
+    //   border-radius: 8px;
+    
+    
+    }
+    
+    &.liked {
+      &::before {
+        // background-color: rgba(255, 255, 255, 0)
+      }
+    }
+    
+    .suffix {
+      opacity: 0;
+      transition: opacity 300ms, transform 300ms;
+      transform: translateX(15px);
+  
+      &.liked {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+}
+
+.like-btn-preview-container{
+    bottom: unset;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+.like-btn{
+  //  color: red;
+   font-size: 20px;
+   
+}

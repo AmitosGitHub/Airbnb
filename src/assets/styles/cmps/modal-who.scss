@@ -1,0 +1,50 @@
+.modal-who{
+        
+    .modal-content{
+        border:1px solid black;
+        top:230px;
+        width:500px;
+        height:550px;
+        padding:10px;
+       
+
+    }
+    .modal-who-body{
+        // background:red;
+        display:flex;
+        flex-direction: column;
+
+        article{
+            border-bottom:1px solid gray; 
+        height:100px;
+        margin-top:10px;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        h3{
+            font-size:26px;
+        }
+        h4{
+            font-size:18px;
+            color:gray;
+        }
+        .counter-who{
+            width:110px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            button{
+                background:none;
+                border:1px solid gray;
+                border-radius:50%;
+                width:32px;
+                cursor: pointer;
+
+            }
+        }
+        }
+
+    }
+}
+

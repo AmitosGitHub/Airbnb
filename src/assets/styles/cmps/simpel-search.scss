@@ -1,0 +1,29 @@
+.simple-search {
+  width: 300px;
+  height: 3em;
+  box-shadow: 0px 0px 4px 1px rgb(184, 181, 181);
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: rgb(8, 8, 8);
+
+  h2 {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 12px;
+    
+  }
+  h3 {
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: rgb(236, 58, 106);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    padding: 10px;
+    color: white;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,33 @@
+.container-carousel {
+  width: 95%;
+  height: 4em;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  .main-carousel {
+    width: 90%;
+    height: 100%;
+    margin-right: 30px;
+    color: gray;
+    h3,
+    h4 {
+      text-align: center;
+    }
+    h3 {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+
+    .slick-arrow {
+      // border: 1px gray solid;
+      background-color: rgb(167, 167, 165);
+      color: black;
+      border-radius: 50%;
+    }
+  }
+  .explore {
+    color: gray;
+  }
+}

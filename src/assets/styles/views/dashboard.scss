@@ -1,0 +1,136 @@
+
+section.container-dashboard{
+//  background:pink;
+.header-dashboard{
+     background:$clr1;
+    color:white;
+    padding-top:20px;
+    padding-left:25px;
+    margin-bottom:30px;
+}
+.dashboard-chart{
+    //  background:yellow;
+    margin-bottom:30px;
+     width:100%;
+     display:flex;
+     justify-content:space-between;
+     .dashboard-line-chart{
+        width:30%;
+        
+     }
+     .dashboard-doughnut-chart{
+        width:30%;
+     }
+     .dashboard-total{
+        width:20%;
+     }
+ }
+
+ .dashboard-table{
+    // background:green;
+    display:flex;
+    flex-direction: column;
+    // justify-content:center;
+    width:100%;
+    table{
+        width:90%;
+    }
+    button{
+    width:100px;
+    height:3em;
+    border-radius:1em;
+    border:1px solid gray;
+   cursor:pointer;
+    }
+    .btn-order{
+    background:none;
+    }
+    .btn-refuse{
+    color:white;
+    background-image: linear-gradient(to right, $clr1 , #c10663);
+    }
+    .btn-approve{
+    // color:white;
+    background-image: linear-gradient(to right, #7FFF00 , #7FFF00);
+    }
+    td{
+    width:100px;
+    }
+    section.dashboard-table-old-order{
+        // background:blue;
+        display:flex;
+        justify-content:center;
+        padding:20px;
+        width:100%;
+
+        thead{
+            background:#E9967A;
+            border:1px solid gray;
+            height:4em;
+            border-radius:1em;
+           font-size:20px;
+           
+        }
+        tbody{
+            
+          tr.preview-user{
+            // background:gold;
+            height:4em;
+            border:1px solid gray;
+
+            td{
+                margin:20px;
+                padding:20px;
+                // background:pink;
+            }
+
+            td img.img-avatar{
+                height:3em;
+                width:3em;
+                border-radius:50%;
+            }
+          }
+       }
+
+ }  
+   section.dashboard-table-new-order{
+    // background:blue;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    width:100%;
+
+    thead{
+        background:#006400;
+        border:1px solid gray;
+        height:4em;
+        border-radius:1em;
+        font-size:20px;
+    }
+    tbody{
+        tr.preview-user{
+            // background:gold;
+            height:4em;
+            border:1px solid gray;
+
+            td{
+                margin:20px;
+                padding:20px;
+                // background:pink;
+            }
+
+            td img.img-avatar{
+                height:3em;
+                width:3em;
+                border-radius:50%;
+            }
+        }
+    }
+        
+    
+ 
+ }
+ }
+}
+
+

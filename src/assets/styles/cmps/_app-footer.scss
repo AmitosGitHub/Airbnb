@@ -1,0 +1,36 @@
+.app-footer{
+    background-color: rgb(234, 231, 231);
+    color: $clr4;
+    padding: 20px;
+    margin: 10px;
+    height:300px;
+    // text-align: center;
+    display:flex;
+    flex-direction:column;
+    .top-footer{
+        display:flex;
+        justify-content:space-around;
+        border-bottom:1px solid gray;
+        height:200px;
+        color:black;
+        h3{
+            margin-left:25px;
+        }
+        ul{
+            list-style:none;
+        }
+    }
+    .bottom-footer{
+        margin-top:10px;
+        display:flex;
+        justify-content:space-between;
+        ul{
+            color:black;
+            list-style:none;
+            display:flex;
+            li{
+                margin:10px;
+            }
+        }
+    }
+}
