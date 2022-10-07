@@ -19,7 +19,6 @@ import PulseLoader from 'react-spinners/PulseLoader'
 
 export const StayDetails = () => {
   const { selectedStay } = useSelector((state) => state.stayModule)
-  const { user } = useSelector((state) => state.userModule)
   const params = useParams().id
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -27,7 +26,6 @@ export const StayDetails = () => {
   useEffect(() => {
     dispatch(getStayById(params))
     console.log('selectedStay', selectedStay)
-    console.log(' user:', user)
   }, [])
 
   useEffect(() => {
@@ -35,13 +33,12 @@ export const StayDetails = () => {
   }, [selectedStay])
 
   console.log('selectedStay:', selectedStay)
-  if (!selectedStay) {
+  if (!selectedStay)
     return (
       <section className="sweet-loading">
         <PulseLoader color="#99a8a4" margin={7} size={16} />
       </section>
     )
-  }
   return (
     <section className="stay-details main-layout">
       <section className="header-details">
@@ -57,7 +54,7 @@ export const StayDetails = () => {
         </div>
 
         <div className="details-content-reserve">
-          <ReserveDetails selectedStay={selectedStay} user={user} />
+          <ReserveDetails selectedStay={selectedStay} />
         </div>
       </section>
 

@@ -25,7 +25,7 @@
 @import 'views/dashboard';
 
 // Components
-
+// @import 'cmps/react_dates_overrides.css';
 @import 'cmps/app-header';
 @import 'cmps/app-footer';
 @import 'cmps/user-msg';
@@ -43,4 +43,3 @@
 @import 'cmps/like-btn-preview';
 @import 'cmps/reserve-modal.scss';
 @import 'cmps/app-filter-carousel.scss';
-@import 'cmps/reserve-details.scss';

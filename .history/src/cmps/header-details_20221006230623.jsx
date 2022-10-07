@@ -1,0 +1,49 @@
+import { React } from 'react'
+
+HeaderDetails
+export const HeaderDetails = () => {
+  return (
+    <header>
+      <section className="header-details top-header">
+        <div className="top-header-details-descreption">
+          <h2>name of place</h2>
+        </div>
+
+        <div className="bottom-header-details-btn-action">
+          <div className="bottom-header-details-descreption">
+            <h4>city-country</h4>
+          </div>
+          <div className="details-btn-action">
+            <div className="btn-link link-share">
+              <h2>img</h2>
+              <button className="btn btn-details-action">Share</button>
+            </div>
+
+            <div className="btn-link link-save">
+              <h2>img</h2>
+              <button className="btn btn-details-action">Save</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="details-gallery hero">
+        <div className="img-center">
+          <img src={selectedStay.imgUrls[0]} />
+        </div>
+        <div className="img-2">
+          <img src={selectedStay.imgUrls[1]} />
+        </div>
+        <div className="img-3">
+          <img src={selectedStay.imgUrls[2]} />
+        </div>
+        <div className="img-4">
+          <img src={selectedStay.imgUrls[3]} />
+        </div>
+        <div className="img-5">
+          <img src={selectedStay.imgUrls[4]} />
+        </div>
+      </section>
+    </header>
+  )
+}

@@ -19,7 +19,6 @@ import PulseLoader from 'react-spinners/PulseLoader'
 
 export const StayDetails = () => {
   const { selectedStay } = useSelector((state) => state.stayModule)
-  const { user } = useSelector((state) => state.userModule)
   const params = useParams().id
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -27,7 +26,6 @@ export const StayDetails = () => {
   useEffect(() => {
     dispatch(getStayById(params))
     console.log('selectedStay', selectedStay)
-    console.log(' user:', user)
   }, [])
 
   useEffect(() => {
@@ -57,7 +55,7 @@ export const StayDetails = () => {
         </div>
 
         <div className="details-content-reserve">
-          <ReserveDetails selectedStay={selectedStay} user={user} />
+          <ReserveDetails selectedStay={selectedStay} />
         </div>
       </section>
 

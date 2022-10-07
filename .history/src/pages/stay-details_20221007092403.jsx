@@ -57,7 +57,7 @@ export const StayDetails = () => {
         </div>
 
         <div className="details-content-reserve">
-          <ReserveDetails selectedStay={selectedStay} user={user} />
+          <ReserveDetails selectedStay={selectedStay} />
         </div>
       </section>
 

@@ -9,7 +9,6 @@ import { HeaderDetails } from '../cmps/header-details'
 import { ReserveDetails } from '../cmps/reserve-details'
 import { InfoGeneral } from '../cmps/info-general'
 import { DatePicker } from '../cmps/date-picker'
-import { DetailsReviews } from '../cmps/details-reviews'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -19,7 +18,6 @@ import PulseLoader from 'react-spinners/PulseLoader'
 
 export const StayDetails = () => {
   const { selectedStay } = useSelector((state) => state.stayModule)
-  const { user } = useSelector((state) => state.userModule)
   const params = useParams().id
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -27,7 +25,6 @@ export const StayDetails = () => {
   useEffect(() => {
     dispatch(getStayById(params))
     console.log('selectedStay', selectedStay)
-    console.log(' user:', user)
   }, [])
 
   useEffect(() => {
@@ -35,13 +32,12 @@ export const StayDetails = () => {
   }, [selectedStay])
 
   console.log('selectedStay:', selectedStay)
-  if (!selectedStay) {
+  if (!selectedStay)
     return (
       <section className="sweet-loading">
         <PulseLoader color="#99a8a4" margin={7} size={16} />
       </section>
     )
-  }
   return (
     <section className="stay-details main-layout">
       <section className="header-details">
@@ -57,12 +53,28 @@ export const StayDetails = () => {
         </div>
 
         <div className="details-content-reserve">
-          <ReserveDetails selectedStay={selectedStay} user={user} />
+          <ReserveDetails selectedStay={selectedStay} />
         </div>
       </section>
 
       <section className="container-reviews">
-        <DetailsReviews selectedStay={selectedStay} />
+        {selectedStay.reviews.map((review) => (
+          <div className="preview-review" key={review.by._id}>
+            <div className="preview-review-by">
+              <div className="preview-review-by-avatar">
+                <img className="img-avatar" src={review.by.imgUrl} />
+              </div>
+              <div className="preview-review-by-descreption">
+                <h2>{review.by.fullname}</h2>
+                <h3>{review.at}</h3>
+              </div>
+            </div>
+
+            <div className="preview-review-txt">
+              <p>{review.txt}</p>
+            </div>
+          </div>
+        ))}
       </section>
     </section>
   )
