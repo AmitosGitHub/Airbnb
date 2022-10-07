@@ -4,7 +4,7 @@ import {
   DashboardTableNewOrder,
   DashboardTableOldOrder,
 } from '../cmps/dashboard/dashboard-table'
-import { DoughnutChart, LineChart } from '../cmps/dashboard/dashboard-chart'
+import { DoughnutChart, LineChart } from '../cmps/dashboard-chart'
 
 export const Dashboard = () => {
   return (

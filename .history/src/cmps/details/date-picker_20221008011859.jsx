@@ -1,5 +1,5 @@
 import { React } from 'react'
-import { DetailsCalendar } from '../cmps/details-calendar'
+import { DetailsCalendar } from './details-calendar'
 
 export const DatePicker = () => {
   return (
