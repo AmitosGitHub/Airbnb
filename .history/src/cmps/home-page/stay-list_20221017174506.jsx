@@ -1,4 +1,4 @@
-import { StayPreview } from '../stay-preview'
+import { StayPreview } from './stay-preview'
 
 export function StayList({ stays, onRemoveStay, onUpdateStay }) {
   return (

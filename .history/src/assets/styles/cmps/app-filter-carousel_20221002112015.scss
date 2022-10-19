@@ -1,0 +1,51 @@
+
+.container-carousel{
+      
+        display:flex;
+        align-items:center;
+        margin-top:15px;
+        margin-bottom:15px;
+        .content-carousel{
+    
+    width:100px;
+    height:50px;
+    color:gray;
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:5px;
+    // background:pink;
+    img{
+        width:1.5em;
+        height:1.5em;
+    }
+    h4{
+        font-size:1em;
+        margin-top:10px;
+    }
+
+
+}
+.content-carousel:hover{
+    border-bottom:1px solid black;
+}
+    }
+    ul.slick-dots li{
+        display:none;
+       
+    }
+.slick-slider .slick-arrow.slick-prev{
+    height:40px;
+    width:40px;
+    border:1px gray solid;
+    background:gray;
+   
+}
+.slick-slider .slick-arrow.slick-next{
+    height:40px;
+    width:40px;
+    border:1px gray solid;
+    background:gray;
+   
+}
